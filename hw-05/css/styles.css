@@ -100,7 +100,7 @@ html {
   width: 104px;
   height: 104px;
   background-color: rgba(78, 198, 171, 0.651);
-  background-image: url(/img/slider/arrow_left_title.png);
+  background-image: url(../img/slider/arrow_left_title.png);
   background-position: center;
   background-repeat: no-repeat;
 
@@ -117,7 +117,7 @@ html {
   width: 104px;
   height: 104px;
   background-color: rgba(78, 198, 171, 0.651);
-  background-image: url(/img/slider/arrow_right_title.png);
+  background-image: url(../img/slider/arrow_right_title.png);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -204,15 +204,15 @@ html {
 }
 
 .but-heart {
-  background-image: url(/img/collection/sellect_button/sellect_button_heart_1.png);
+  background-image: url(../img/collection/sellect_button/sellect_button_heart_1.png);
 }
 
 .but-arrow {
-  background-image: url(/img/collection/sellect_button/sellect_button_arrow_2.png);
+  background-image: url(../img/collection/sellect_button/sellect_button_arrow_2.png);
 }
 
 .but-clock {
-  background-image: url(/img/collection/sellect_button/sellect_button_clock_3.png);
+  background-image: url(../img/collection/sellect_button/sellect_button_clock_3.png);
 }
 
 .but-add-card {
@@ -220,7 +220,7 @@ html {
   width: 164px;
   height: 50px;
   margin-top: 7px;
-  background-image: url(/img/collection/sellect_button/sellect_button_recicled_4.png);
+  background-image: url(../img/collection/sellect_button/sellect_button_recicled_4.png);
 }
 
 .name_price {
@@ -273,10 +273,10 @@ color: #1abc9c;
 
 /*---------------------------- FOOTER */
 .footer-site {
-  /* font-family: 'Open Sans', 'Arial', sans-serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   background-color: #323232;
   padding-top: 36px;
-  padding-bottom: 36px; */
+  padding-bottom: 36px;
 }
 
 .footer-wrap {
@@ -316,7 +316,7 @@ color: #1abc9c;
 
 .h2-slider {
   font-family: "Roboto", sans-serif;
-  font-size: 52px;
+  font-size: 57px;
   font-weight: 700;
   color: white;
 }
