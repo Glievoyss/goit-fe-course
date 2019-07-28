@@ -1,0 +1,388 @@
+/*================== PATERNS ==========================*/
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    width: 1201px;
+    margin: 0 auto;
+    margin-bottom: 87px;
+}
+
+/* ============= HEADER ========================== */
+.navigation {
+    min-height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 30px;
+}
+
+.menu {
+    width: 491px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-item {
+    list-style: none;
+
+}
+
+.menu-item::after {
+    display: block;
+    content: '';
+
+    background-color: rgba(243, 129, 129, 0);
+    transition: all 200ms linear;
+
+}
+
+.menu-item:hover::after {
+    display: block;
+    content: '';
+    margin-top: 12px;
+    width: 100%;
+    height: 3px;
+    background-color: rgba(243, 129, 129, 1);
+}
+
+.menu-item:hover .menu-item-link {
+    color: #f38181;
+}
+
+/* ======= SECTION Amazing Services ============ */
+
+.service_index {
+    margin-bottom: 18px;
+}
+
+.serv_name::after {
+    display: block;
+    content: '';
+    margin: 0 auto;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin-top: 42px;
+}
+
+.serv_table {
+    width: 1201px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 64px;
+}
+
+.serv_description {
+    margin-top: 18px;
+}
+
+
+.serv_list {
+    position: relative;
+    width: 383px;
+    padding-left: 81px;
+    margin-bottom: 90px;
+}
+
+.serv_list:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+}
+
+.serv_list:nth-child(1) .serv_item:before {
+    position: absolute;
+    top: 0;
+    left: 21px;
+    width: 32px;
+    height: auto;
+    content: url(../img/section_service/alarm.png);
+}
+
+.serv_list:nth-child(2) .serv_item:before {
+    position: absolute;
+    top: 0;
+    left: 21px;
+    width: 32px;
+    height: auto;
+    content: url(../img/section_service/graph.png);
+}
+
+
+.serv_list:nth-child(3) .serv_item:before {
+    position: absolute;
+    top: 0;
+    left: 21px;
+    width: 32px;
+    height: auto;
+    content: url(../img/section_service/computer.png);
+}
+
+.serv_list:nth-child(4) .serv_item:before {
+    position: absolute;
+    top: 0;
+    left: 21px;
+    width: 32px;
+    height: auto;
+    content: url(../img/section_service/book.png);
+}
+
+.serv_list:nth-child(5) .serv_item:before {
+    position: absolute;
+    top: 0;
+    left: 21px;
+    width: 32px;
+    height: auto;
+    content: url(../img/section_service/home.png);
+}
+
+.serv_list:nth-child(6) .serv_item:before {
+    position: absolute;
+    top: 0;
+    left: 21px;
+    width: 32px;
+    height: auto;
+    content: url(../img/section_service/image.png);
+}
+
+
+/*=========== SECTION TEAM =============================== */
+
+.team_notation {
+    margin-bottom: 90px;
+}
+
+.list_workers {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+}
+
+.cards_workers {
+    position: relative;
+    margin-bottom: 28px;
+    transition: all 200ms linear;
+}
+
+.overlay_social {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 380px;
+    height: 470px;
+    background-image: linear-gradient(0deg,
+            rgba(252, 227, 138, 0.7) 0%,
+            rgba(243, 129, 129, 0.7) 100%);
+    opacity: 0;
+
+}
+
+.cards_workers:hover .overlay_social {
+    opacity: 1;
+}
+
+.cards_workers:hover {
+    opacity: 1;
+    transform: translate(-10px, -10px);
+    box-shadow: 10px 10px #95e1d3;
+}
+
+.social_list {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.icons_social {
+    width: 55px;
+    height: 56px;
+    margin-left: 1px;
+    
+}
+
+.social_link {
+    display: block;
+    width: 55px;
+    height: 56px;
+    background-color: #fce38a;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 1px;
+    transition: all 200ms linear;
+    
+}
+
+.social_link:hover {
+
+    background-color: #95e1d3;
+
+}
+
+.facebook {
+    background-image: url(../img/section_team/social/facebook.png);
+}
+
+.twitter {
+    background-image: url(../img/section_team/social/twitter.png);
+}
+
+.pinterest {
+    background-image: url(../img/section_team/social/pinterest.png);
+}
+
+.instagram {
+    background-image: url(../img/section_team/social/instagram.png);
+}
+
+
+/*===================  FOOTER ====================*/
+
+.footer_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 64px;
+    border-top: 1px solid #e5e5e5;
+    margin-bottom: 0;
+}
+
+.ligal_info {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.ligal_name {
+    color: #f9c0c0;
+    text-decoration: none;
+}
+
+.mail_password  {
+    height: 40px;
+    width: 230px;
+    font-style: italic;
+    border: 1px solid #e5e5e5;
+}
+
+.mail_item::placeholder {
+    color: #b3b3b3;
+}
+
+.send_btn {
+    height: 40px;
+    width: 150px;
+    border: none;
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #95e1d3;
+}
+
+
+/* === FONTS : size, family, text-transform, color, text-decoration =====*/
+
+
+.menu-item-link {
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: #95e1d3;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-decoration: none;
+    transition: all 200ms linear;
+}
+
+
+.service_index {
+
+    font-size: 24px;
+    font-family: 'Kaushan Script', cursive;
+    color: rgb(51, 51, 51);
+    line-height: 1.2;
+    text-align: center;
+
+}
+
+.serv_name {
+
+    font-size: 30px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.serv_item {
+
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: left;
+
+}
+
+.serv_description {
+
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    color: rgb(153, 153, 153);
+    line-height: 1.6;
+    text-align: left;
+}
+
+.team_notation {
+    margin-top: 45px;
+    font-size: 15px;
+    font-family: "Roboto";
+    color: rgb(153, 153, 153);
+    line-height: 1.6;
+    text-align: center;
+
+}
+
+.name {
+
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.position {
+    font-size: 15px;
+    font-family: "Roboto";
+    color: rgb(153, 153, 153);
+    font-style: italic;
+    line-height: 1.6;
+
+}
