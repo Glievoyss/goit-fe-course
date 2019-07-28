@@ -219,7 +219,7 @@ img {
     width: 55px;
     height: 56px;
     margin-left: 1px;
-    
+
 }
 
 .social_link {
@@ -231,7 +231,7 @@ img {
     background-repeat: no-repeat;
     margin-right: 1px;
     transition: all 200ms linear;
-    
+
 }
 
 .social_link:hover {
@@ -279,14 +279,14 @@ img {
     text-decoration: none;
 }
 
-.mail_password  {
+.mail_password {
     height: 40px;
     width: 230px;
     font-style: italic;
     border: 1px solid #e5e5e5;
 }
 
-.mail_item::placeholder {
+.mail_password::placeholder {
     color: #b3b3b3;
 }
 
@@ -294,11 +294,17 @@ img {
     height: 40px;
     width: 150px;
     border: none;
-    color: #ffffff;
-    font-weight: 700;
-    cursor: pointer;
-    text-transform: uppercase;
     background-color: #95e1d3;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+
+
+
 }
 
 
