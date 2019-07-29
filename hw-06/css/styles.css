@@ -19,10 +19,14 @@ img {
 .container {
     width: 1201px;
     margin: 0 auto;
-    margin-bottom: 87px;
 }
 
 /* ============= HEADER ========================== */
+
+.header_site {
+    margin-bottom: 87px;
+}
+
 .navigation {
     min-height: 85px;
     display: flex;
@@ -64,7 +68,20 @@ img {
     color: #f38181;
 }
 
+.menu-item-link {
+    display: block;
+}
+
 /* ======= SECTION Amazing Services ============ */
+.service {
+    margin-bottom: 87px;
+}
+
+
+.team_siz {
+    margin-bottom: 87px;
+}
+
 
 .service_index {
     margin-bottom: 18px;
@@ -163,6 +180,10 @@ img {
 
 /*=========== SECTION TEAM =============================== */
 
+.team {
+    margin-bottom: 87px;
+}
+
 .team_notation {
     margin-bottom: 90px;
 }
@@ -259,7 +280,7 @@ img {
 
 /*===================  FOOTER ====================*/
 
-.footer_info {
+.footer_content {
     display: flex;
     justify-content: space-between;
     align-items: center;
