@@ -1,0 +1,313 @@
+/* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+        url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/montserrat-v14-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-700 - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+        url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/montserrat-v14-latin-700.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* noto-serif-italic - latin */
+@font-face {
+    font-family: 'Noto Serif';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Noto Serif Italic'), local('NotoSerif-Italic'),
+        url('../fonts/noto-serif-v8-latin-italic.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/noto-serif-v8-latin-italic.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/*================== PATERNS ==========================*/
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    /* background-color: brown; */
+
+}
+
+/* ============== HEADER ====================*/
+
+.header_site {
+    margin-bottom: 100px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 40px;
+
+}
+
+.menu_list {
+    list-style: none;
+    width: 485px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.menu_link {
+    display: block;
+    text-decoration: none;
+    transition: all 200ms linear;
+}
+
+.menu_item:hover .menu_link {
+    color: #fed136;
+}
+
+/*=================  Sevtion services  ================*/
+
+.services {
+    margin-bottom: 120px;
+}
+
+.services_description {
+    margin-bottom: 70px;
+}
+
+.service_list {
+    list-style: none;
+    width: 940px;
+    min-height: 125px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service_item {
+    list-style: none;
+    width: 291px;
+    min-height: 125px;
+}
+
+.service_item_name {
+    margin-bottom: 16px;
+}
+
+.service_item::before {
+    display: block;
+    margin: 0 auto;
+    content: '';
+    width: 74px;
+    height: 73px;
+    margin-bottom: 21px;
+}
+
+.service_item:nth-child(1)::before {
+    background-image: url(../img/section1/circle_1.png);
+}
+
+.service_item:nth-child(2)::before {
+    background-image: url(../img/section1/circle_2.png);
+}
+
+.service_item:nth-child(3)::before {
+    background-image: url(../img/section1/circle_3.png);
+}
+
+
+/*=================  Sevtion contact  ================*/
+.contact {
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.contact_title {
+    margin-bottom: 20px;
+
+}
+
+.contact_description {
+    margin-bottom: 70px;
+}
+
+.contact {
+    background-color: rgb(0, 0, 0);
+    padding-top: 102px;
+    padding-bottom: 114px;
+}
+
+.form_card {
+    width: 940px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 29px;
+}
+
+.wraper_n_m_s {
+    width: 455px;
+}
+
+.fit_back_form {
+    width: 940px;
+}
+
+.form_input {
+    width: 455px;
+    height: 53px;
+    padding-left: 21px;
+    
+}
+
+.form_input:not(:last-child) {
+    margin-bottom: 26px;
+}
+
+.form_textarea {
+    display: block;
+    width: 455px;
+    height: 210px;
+    padding-left: 21px;
+    padding-top: 21px;
+}
+
+.requir:focus:required:valid {
+    outline: 3px solid green;
+}
+
+.requir:focus:required:invalid {
+    outline: 3px solid red;
+}
+
+.form_sedn_btn {
+    display: block;
+    margin: 0 auto;
+    width: 240px;
+    height: 66px;
+    background-color: #fed136;
+    border-radius: 4px;
+    border: none;
+}
+
+.form_sedn_btn:hover {
+    background-color: green;
+}
+
+/* === FONTS : size, family, text-transform, color, text-decoration =====*/
+.menu_link {
+    font-size: 14px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    color: #222222;
+    text-transform: uppercase;
+    line-height: 2.929;
+    text-align: center;
+
+}
+
+.services_title {
+
+    font-size: 40px;
+    font-family: "Montserrat";
+    color: rgb(34, 34, 34);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 14px;
+
+}
+
+.services_description {
+    font-size: 16px;
+    font-family: "Noto Serif";
+    color: rgb(119, 119, 119);
+    font-style: italic;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.service_item_name {
+
+    font-size: 18px;
+    font-family: "Montserrat";
+    color: rgb(34, 34, 34);
+    font-weight: bold;
+    text-align: center;
+
+}
+
+
+.service_item_description {
+    font-size: 14px;
+    font-family: "Myriad Pro";
+    color: rgb(119, 119, 119);
+    text-align: center;
+
+}
+
+
+.contact_title {
+    font-size: 40px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.contact_description {
+    font-size: 16px;
+    font-family: "DroidSerif";
+    color: rgb(119, 119, 119);
+    font-style: italic;
+    text-align: center;
+}
+
+.form_input,
+.form_textarea {
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(187, 187, 187);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.form_sedn_btn {
+    font-size: 18px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
