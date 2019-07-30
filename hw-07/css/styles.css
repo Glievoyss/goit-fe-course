@@ -106,7 +106,6 @@ img {
 .service_list {
     list-style: none;
     width: 940px;
-    min-height: 125px;
     display: flex;
     justify-content: space-between;
 }
@@ -114,7 +113,7 @@ img {
 .service_item {
     list-style: none;
     width: 291px;
-    min-height: 125px;
+    
 }
 
 .service_item_name {
