@@ -1,0 +1,123 @@
+/* =============  MOBILE ======================= */
+@media (max-width: 767px) {
+    .people_item:not(:last-child) {
+        margin-bottom: 24px;
+    }
+}
+
+@media (min-width: 767px) and (max-width:1023px) {
+    .people_item:not(:nth-last-child(-n+2)) {
+        margin-bottom: 51px;
+    }
+}
+
+
+
+
+/* ============== TABLET ====================== */
+@media (min-width: 768px) {
+
+    /* ===== HEADER ====== */
+    .head_site {
+        padding-bottom: 230px;
+    }
+
+    .container {
+        width: 748px;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 135px;
+        padding: 0 32px;
+        padding-top: 30px;
+    }
+
+    .list_link {
+        margin-bottom: 0px;
+    }
+
+    .nav_title {
+        display: block;
+        margin: 0 auto;
+        width: 550px;
+        font-size: 52px;
+        margin-bottom: 30px;
+    }
+
+    .nav_description {
+        font-size: 24px;
+        width: 403px;
+        margin-bottom: 41px;
+    }
+
+    .nav_butt {
+        display: block;
+        margin: 0 auto;
+        width: 225px;
+    }
+
+    /* ===== SECTION ====== */
+
+    .sec_partners {
+        padding-bottom: 40px;
+    }
+
+
+    .sec_part_name {
+        margin-bottom: 27px;
+    }
+
+    .people_list {
+        width: 492px;
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 38px;
+    }
+
+
+
+
+    .next_butt {
+        display: block;
+        width: 191px;
+        margin: 0 auto;
+    }
+
+}
+
+/* ============== LAPTOP ====================== */
+@media (min-width: 1024px) {
+    
+    .container {
+        width: 941px;
+    }
+
+    .navigation {
+        padding: 0;
+    }
+
+
+
+    .sec_partners {
+        padding-bottom: 73px;
+    }
+
+    .people_list {
+        width: 940px;
+    }
+
+    .people_item {
+        width: 220px;
+        margin-bottom: 0;
+    }
+
+
+
+
+}

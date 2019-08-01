@@ -1,0 +1,182 @@
+/*================== PATERNS ==========================*/
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+body {
+    /* background-color: burlywood; */
+}
+
+.container {
+    width: 295px;
+    margin: 0 auto;
+}
+
+/* ============== HEADER ====================*/
+.head_site {
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 20px;
+    padding-bottom: 140px;
+}
+
+.navigation {
+    display: block;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.list_link {
+    list-style: none;
+    text-align: center;
+    font-size: 0px;
+    margin-bottom: 100px;
+}
+
+.main_items {
+    display: inline-block;
+    border: 2px solid transparent;
+}
+
+.link {
+    display: block;
+    width: 91px;
+    padding: 10px 0;
+}
+
+.main_items:hover {
+    border-radius: 25px;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.logo_link {
+    display: block;
+}
+
+.logo_img {
+    margin: 0 auto;
+}
+
+.nav_title {
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.nav_description {
+    display: block;
+    margin: 0 auto;
+    width: 233px;
+    margin-bottom: 15px;
+}
+
+.nav_butt {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    background-color: #ff4e50;
+    border-radius: 25px;
+    border: none;
+}
+
+.nav_butt:hover {
+    background-color: green;
+}
+
+/* =================== SECTION PARTNERS =============== */
+.sec_partners {
+    padding-top: 70px;
+    padding-bottom: 57px;
+}
+
+.sec_part_name {
+    margin-bottom: 15px;
+}
+
+.people_list {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 27px;
+}
+
+.photo_wrap {
+    display: block;
+    width: 121px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.photo_wrap::after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 41px;
+    height: 41px;
+    content: '';
+}
+
+
+.icon_logo_1::after {
+    background-image: url(../img/section1/photo_after_1.png);
+}
+
+.icon_logo_2::after {
+    background-image: url(../img/section1/photo_after_2.png);
+}
+
+.icon_logo_3::after {
+    background-image: url(../img/section1/photo_after_3.png);
+}
+
+.icon_logo_4::after {
+    background-image: url(../img/section1/photo_after_4.png);
+}
+
+
+.name_people {
+    margin-bottom: 12px;
+}
+
+.about_people {
+    display: block;
+    margin: 0 auto;
+    width: 220px;
+
+}
+
+
+.next_butt {
+    color: #ff4e50;
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    background-color: transparent;
+    border: 2px solid #ff4e50;
+    border-radius: 25px;
+
+}
+
+.next_butt:hover {
+    color: white;
+    background-color: green;
+}
