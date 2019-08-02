@@ -1,0 +1,97 @@
+/* =============  MOBILE ======================= */
+@media (max-width: 767px) {
+    .people_item:not(:last-child) {
+        margin-bottom: 24px;
+    }
+}
+
+@media (min-width: 767px) and (max-width:992px) {
+    .people_item:not(:nth-last-child(-n+2)) {
+        margin-bottom: 51px;
+    }
+}
+
+
+/* ============== TABLET ====================== */
+@media (min-width: 768px) {
+
+    .head_site {
+        background-image: url(../img/bg_tablet.jpg);
+
+    }
+
+    /* ===== HEADER ====== */
+    .head_site {
+        padding-bottom: 230px;
+    }
+
+    .navig {
+        margin-bottom: 135px;
+    }
+
+    .list_link {
+        margin-bottom: 0px;
+    }
+
+    .nav_title {
+        width: 550px;
+        font-size: 52px;
+        margin-bottom: 30px;
+    }
+
+    .nav_description {
+        font-size: 24px;
+        width: 403px;
+        margin-bottom: 41px;
+    }
+
+    .nav_butt {
+
+        width: 225px;
+    }
+
+    /* ===== SECTION ====== */
+
+    .sec_partners {
+        padding-bottom: 40px;
+    }
+
+
+    .sec_part_name {
+        margin-bottom: 27px;
+    }
+
+    .people_list {
+
+        margin-bottom: 38px;
+    }
+
+    .next_butt {
+        display: block;
+        width: 191px;
+        margin: 0 auto;
+    }
+
+}
+
+/* ============== LAPTOP ====================== */
+@media (min-width: 992px) {
+
+    .head_site {
+        background-image: url(../img//bg_lap_top.jpg);
+    }
+
+    .navig {
+        padding: 0;
+    }
+
+    .sec_partners {
+        padding-bottom: 73px;
+    }
+
+    .people_item {
+        margin-bottom: 0;
+    }
+
+
+}
